@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'h';
+  src: url(../fonts/hamiltoneg.ttf);
+}
+@font-face {
+  font-family: 'd';
+  src: url(../fonts/day.otf);
+}
+
+body {
+  background-color: #2F3D3E;
+}
+.wrapper {
+  width: 350px;
+  margin: 0 auto;
+}
+
+
+/* Приветственный экран */
+.main {
+  position: relative;
+  height: 100vh;
+}
+.main__title {
+  color: white;
+  font-family: 'h';
+  font-size: 48px;
+  line-height: 89px;
+  transform: translateX(-50%) rotate(-15deg); 
+  z-index: 50;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+}
+.main__date {
+  font-family: 'd';
+  font-size: 64px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  z-index: 50;
+}
+.main__bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Место и время */
+
+.block__place {
+  position: relative;
+  height: 100vh;
+}
+.place__title {
+  font-size: 48px;
+  font-family: 'd';
+  color: white;
+  text-align: center;
+}
+.place__date {
+  font-size: 48px;
+  font-family: 'd';
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+}
+.place__address {
+  font-size: 48px;
+  font-family: 'd';
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+}
