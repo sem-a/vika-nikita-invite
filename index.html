@@ -11,7 +11,7 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="main">
+    <div class="main block">
       <div class="main__date">
         <h2>03.06.2023</h2>
       </div>
@@ -24,20 +24,182 @@
       </div>
     </div>
 
-    <div class="block__place">
-      <div class="wrapper">
-        <div class="place__wrapper">
-          <div class="place__title">
-            <h2>Мы будем счастливы Вас видетъ на нашей свадъбе:</h2>
-          </div>
-          <div class="place__date">
-            <p>3 июня 2023</p>
-            <p>15:00</p>
-          </div>
-          <div class="place__address">
-            <p>г. Мурманск, ул. Огни Мурманска, д. 39</p>
-          </div>
+    <div class="block place">
+      <div class="place__wrapp">
+        <div class="place__title">
+          <h2>Мы будем счастливы Вас видетъ на нашей свадъбе:</h2>
         </div>
+        <div class="place__date">
+          <p>3 июня 2023</p>
+          <p>15:00</p>
+        </div>
+        <div class="place__address">
+          <p>г. Мурманск, ул. Огни Мурманска, д. 39</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="block dress">
+      <div class="dress__wrapp">
+        <div class="dress__title">
+          <h2 class="title">Дресс-код</h2>
+        </div>
+        <div class="dress__color">
+          <div class="color-item"></div>
+          <div class="color-item"></div>
+          <div class="color-item"></div>
+          <div class="color-item"></div>
+        </div>
+        <div class="dress__text text">
+          <p>
+            Мы будем оченъ признателъны, если Вы исполъзуете цвета нашей свадъбы в своих образах
+          </p>
+        </div>
+
+        <div class="wishes__title">
+          <h2 class="title">Пожелания</h2>
+        </div>
+        <div class="wishes__items">
+          <div class="wishes-item text">
+            <p>приносите с собой веселъе и радостъ в душе, а подарки - в конвертах</p>
+          </div>
+          <div class="wishes-item text">
+            <p>
+              если Ваше сердце жаждет преподнести цветы, то просим сделать выбор в полъзу доброты -
+              переведите эти денъги в приют или приносите корм и другие вещи первой необходимости
+              для животных на свадъбу, мы обязательно отвезём их сами
+            </p>
+          </div>
+          <div class="wishes-item text">
+            <p>возъмите с собой немного наличных денег - так праздник будет интересней</p>
+          </div>
+          <div class="wishes-item text"><p>огромная просъба: будъте пунктуалъными</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block__form">
+      <div class="wrapper">
+        <div class="form__title">
+          <h2 class="title">Анкета</h2>
+        </div>
+
+        <form action="#" class="form">
+          <div class="item">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Введите ваше имя"
+              class="form__input"
+            />
+          </div>
+          <div class="form__item">
+            <p class="form__text">
+              На время свадъбы будет снят дом (2 дня). В доме 18 спалъных мест. Хотите ли Вы
+              остатъся?
+            </p>
+            <div class="item__checkbox">
+              <input type="checkbox" name="house" id="house" class="form__checkbox" />
+              <label for="house" class="form__label">я останусь в доме</label>
+            </div>
+          </div>
+          <div class="form__item">
+            <p class="form__text">Какие у Вас предпочтения в еде?</p>
+            <div class="item__checkbox">
+              <div class="items__variant">
+                <input
+                  type="checkbox"
+                  value="курица"
+                  name="bird"
+                  id="bird"
+                  class="form__checkbox"
+                />
+                <label for="bird" class="form__label">курица</label>
+              </div>
+              <div class="items__variant">
+                <input type="checkbox" value="свинина" name="pig" id="pig" class="form__checkbox" />
+                <label for="pig" class="form__label">свинина</label>
+              </div>
+              <div class="items__variant">
+                <input type="checkbox" value="рыба" name="fish" id="fish" class="form__checkbox" />
+                <label for="fish" class="form__label">рыба</label>
+              </div>
+            </div>
+          </div>
+          <div class="form__item">
+            <label for="allerg" class="form__label"
+              >Не забудъте указать аллергию, если она естъ:</label
+            >
+            <div class="item">
+              <input
+                type="text"
+                name="allerg"
+                id="allerg"
+                placeholder="Введите аллергию"
+                class="form__input"
+              />
+            </div>
+          </div>
+          <div class="form__item">
+            <p class="form__text">Что предпочитаете из алкоголя?</p>
+            <div class="item__checkbox">
+              <div class="items__variant">
+                <input
+                  type="checkbox"
+                  value="шампанское"
+                  name="champagne"
+                  id="champagne"
+                  class="form__checkbox"
+                />
+                <label for="champagne" class="form__label">шампанское</label>
+              </div>
+              <div class="items__variant">
+                <input
+                  type="checkbox"
+                  value="вино белое"
+                  name="white"
+                  id="white"
+                  class="form__checkbox"
+                />
+                <label for="white" class="form__label">вино белое</label>
+              </div>
+              <div class="items__variant">
+                <input
+                  type="checkbox"
+                  value="вино красное"
+                  name="red"
+                  id="red"
+                  class="form__checkbox"
+                />
+                <label for="red" class="form__label">вино красное</label>
+              </div>
+              <div class="items__variant">
+                <input
+                  type="checkbox"
+                  value="конъяк"
+                  name="cognac"
+                  id="cognac"
+                  class="form__checkbox"
+                />
+                <label for="cognac" class="form__label">конъяк</label>
+              </div>
+              <div class="items__variant">
+                <input
+                  type="checkbox"
+                  value="водка"
+                  name="vodka"
+                  id="vodka"
+                  class="form__checkbox"
+                />
+                <label for="vodka" class="form__label">водка</label>
+              </div>
+            </div>
+          </div>
+          <div class="form__item">
+            <button class="form__button">ОТПРАВИТЬ</button>
+          </div>
+        </form>
       </div>
     </div>
 

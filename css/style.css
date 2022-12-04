@@ -9,18 +9,33 @@
 
 body {
   background-color: #2F3D3E;
+  font-family: 'd';
 }
 .wrapper {
   width: 350px;
   margin: 0 auto;
 }
-
-
-/* Приветственный экран */
-.main {
+.title {
+  font-size: 48px;
+  font-family: 'd';
+  color: white;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.block {
   position: relative;
   height: 100vh;
 }
+.text {
+  font-size: 24px;
+  font-family: 'd';
+  color: white;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+
+/* Приветственный экран */
 .main__title {
   color: white;
   font-family: 'h';
@@ -45,15 +60,18 @@ body {
 .main__bg {
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 50%;
+  transform: translate(-50%);
   z-index: 1;
 }
 
 /* Место и время */
-
-.block__place {
-  position: relative;
-  height: 100vh;
+.place__wrapp {
+  width: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .place__title {
   font-size: 48px;
@@ -74,4 +92,87 @@ body {
   color: white;
   text-align: center;
   margin-top: 30px;
+}
+
+/* дресс код и пожелания */
+.dress__wrapp {
+  width: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.dress__color {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.color-item {
+  width: 30px;
+  height: 30px;
+  background-color: #2B3151;
+  border: white 1px solid;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+.color-item:nth-child(2) {
+  background-color: #2F3D3E;
+}
+.color-item:nth-child(3) {
+  background-color: #4F2728;
+}
+.color-item:nth-child(4) {
+  background-color: #918F92;
+}
+.dress__text {
+  margin-top: 20px;
+}
+.wishes__title {
+  margin-top: 30px;
+}
+.wishes__items {
+  margin-top: 15px;
+}
+.wishes-item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+/* анкета */
+.item {
+  text-align: center;
+}
+input.form__input {
+  width: 300px;
+  height: 45px;
+  font-size: 24px;
+  color: #2F3D3E;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  padding: 0 20px;
+}
+input.item__checkbox {
+  width: 300px;
+  margin: 0 auto;
+}
+p.form__text {
+  font-size: 24px;
+  color: white;
+  letter-spacing: 2px;
+}
+label.form__label {
+  font-size: 24px;
+  color: white;
+  letter-spacing: 2px;
+}
+.form__item {
+  margin-top: 20px;
+}
+.item__checkbox {
+  margin-top: 20px;
+}
+.items__vatiant{
+  margin-top: 20px;
 }
