@@ -152,8 +152,9 @@ input.form__input {
   letter-spacing: 2px;
   border-radius: 5px;
   padding: 0 20px;
+  margin-top: 5px;
 }
-input.item__checkbox {
+.item__checkbox {
   width: 300px;
   margin: 0 auto;
 }
@@ -163,6 +164,7 @@ p.form__text {
   letter-spacing: 2px;
 }
 label.form__label {
+  padding-left: 5px;
   font-size: 24px;
   color: white;
   letter-spacing: 2px;
@@ -173,6 +175,58 @@ label.form__label {
 .item__checkbox {
   margin-top: 20px;
 }
-.items__vatiant{
+.items__variant {
   margin-top: 20px;
+}
+.form__item-button {
+  text-align: center;
+  margin-top: 20px;
+}
+button.form__button {
+  width: 300px;
+  height: 45px;
+  padding-top: 5px;
+  background: white;
+  font-size: 24px;
+  color: #2F3D3E;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* предупрждение */
+
+.block__warning {
+  margin-top: 40px;
+  padding-bottom: 100px;
+}
+.warning__text p {
+  margin-top: 20px;
+  font-size: 24px;
+  color: white;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.warning__name p{
+  margin-top: 10px;
+  font-size: 24px;
+  color: white;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.warning__button {
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+.warning__button a{
+  margin-top: 10px;
+  font-size: 24px;
+  background-color: white;
+  color: #2F3D3E;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 10px 60px 5px 60px;
+  border-radius: 5px;
+  text-decoration: none;
 }
